@@ -3,58 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
-  <meta name="description" content="Personal portfolio and resume website.">
+  <title>My Personal Website | Figma Theme</title>
+  <meta name="description" content="Personal portfolio and resume website with a Figma-inspired design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@320;330;340;480;540;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="hero" class="hero">
-      <img src="assets/profile.JPG" alt="Profile Picture" class="profile-img">
-      <div class="hero-text">
-        <h1>Welcome!</h1>
-        <p class="subtitle">Software Developer | Tech Enthusiast | Problem Solver</p>
-        <p>Hi, I'm a passionate developer building elegant solutions to complex problems. Welcome to my personal corner of the web.</p>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I specialize in building responsive web applications and exploring new technologies. With a background in computer science, I love tackling challenges that require creative thinking and solid engineering.</p>
-    </section>
-
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>Interested in my professional background? Feel free to view or download my latest CV.</p>
-      <a href="assets/cv.pdf" class="cv-link" target="_blank" rel="noopener noreferrer">View Resume (PDF)</a>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>I'm always open to new opportunities and collaborations. You can find me on these platforms:</p>
+    <div class="container" style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+      <div class="logo" style="font-weight: 700; font-size: 20px;">Personal</div>
       <nav>
         <ul>
-          <li><a href="https://github.com" target="_blank">GitHub</a></li>
-          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-          <li><a href="mailto:example@email.com">Email</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="nav-cta">
+        <a href="assets/cv.pdf" class="button-primary" style="font-size: 14px; padding: 8px 16px;">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <img src="assets/profile.JPG" alt="Profile Picture" class="profile-img">
+      <h1 class="display-xl">Software developer building the future.</h1>
+      <p class="body-lg">Passionate about elegant solutions, clean code, and user-centric design. Welcome to my personal workspace.</p>
+    </section>
+
+    <section id="about" class="section-block block-lilac">
+      <span class="eyebrow">Introduction</span>
+      <h2 class="display-lg">About Me</h2>
+      <p class="headline">I specialize in building responsive web applications and exploring new technologies. With a background in computer science, I love tackling challenges that require creative thinking and solid engineering.</p>
+    </section>
+
+    <section id="resume" class="section-block block-navy">
+      <span class="eyebrow">Professional Background</span>
+      <h2 class="display-lg">Resume</h2>
+      <p class="headline" style="margin-bottom: var(--spacing-xl);">Interested in my professional background? Feel free to view or download my latest CV.</p>
+      <a href="assets/cv.pdf" class="button-secondary" target="_blank" rel="noopener noreferrer">View Resume (PDF)</a>
+    </section>
+
+    <section id="contact" class="section-block block-lime">
+      <span class="eyebrow">Connect</span>
+      <h2 class="display-lg">Contact</h2>
+      <p class="headline" style="margin-bottom: var(--spacing-xl);">I'm always open to new opportunities and collaborations. You can find me on these platforms:</p>
+      <div style="display: flex; gap: var(--spacing-md); flex-wrap: wrap;">
+        <a href="https://github.com" class="button-primary" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" class="button-primary" target="_blank">LinkedIn</a>
+        <a href="mailto:example@email.com" class="button-primary">Email</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 My Personal Website. Built with simplicity in mind.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="font-weight: 700; font-size: 24px; margin-bottom: var(--spacing-lg);">Personal</div>
+          <p class="body-sm">&copy; 2026 My Personal Website. Built with the Figma Design System.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://github.com">GitHub</a></li>
+            <li><a href="https://linkedin.com">LinkedIn</a></li>
+            <li><a href="mailto:example@email.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </body>
