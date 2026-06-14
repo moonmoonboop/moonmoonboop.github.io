@@ -133,6 +133,7 @@ nav a {
 .block-lilac { background-color: var(--color-block-lilac); }
 .block-lime { background-color: var(--color-block-lime); }
 .block-coral { background-color: var(--color-block-coral); }
+.block-mint { background-color: var(--color-block-mint); }
 .block-navy { 
   background-color: var(--color-block-navy); 
   color: var(--color-on-primary);
